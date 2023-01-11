@@ -13,13 +13,17 @@ export const Card = (props: CardProps) => {
   const { chapter, character, toggleState, setToggleState } = props;
 
   return (
-    <div
+    <button
       style={{
         width: "15em",
         height: "10em",
         border: "2px solid pink",
+        borderRadius: ".6em",
+        display: "flex",
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        fontSize: "1.5em",
       }}
       onClick={() =>
         setToggleState(
@@ -29,21 +33,26 @@ export const Card = (props: CardProps) => {
         )
       }
     >
-      <div style={{ fontSize: ".75em" }}>Chapter {chapter}</div>
-      <div style={{ paddingTop: "1em" }}>
+      <div>
         {toggleState === ToggleState.FRONT && (
           <div style={{ fontSize: "1.75em" }}>{character.hanzi}</div>
         )}
         {toggleState === ToggleState.BACK && (
           <>
             <div>{character.pinyin}</div>
-            <div style={{ paddingTop: ".5em", fontSize: ".9em" }}>
+            <div
+              style={{
+                paddingTop: ".5em",
+                fontSize: ".75em",
+                fontWeight: "lighter",
+              }}
+            >
               {character.definition}
             </div>
           </>
         )}
       </div>
-    </div>
+    </button>
   );
 };
 
