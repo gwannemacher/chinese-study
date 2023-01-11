@@ -13,7 +13,7 @@ export const Lesson17: Lesson = {
         { hanzi: '特别', pinyin: 'tèbié', definition: 'especially' },
         { hanzi: '美', pinyin: 'měi', definition: 'beautiful' },
         { hanzi: '烤鸭', pinyin: 'kǎoyā', definition: 'roast duck' },
-        { hanzi: '只', pinyin: 'zhǐ', definition: '(a measure word for animals)' },
+        { hanzi: '只', pinyin: 'zhī', definition: '(a measure word for animals)' },
         { hanzi: '病', pinyin: 'bìng', definition: 'to be ill; disease; illness' },
         { hanzi: '抽(时间)', pinyin: 'chōu (shíjiān)', definition: 'to find (time to do)' },
         { hanzi: '时间', pinyin: 'shíjiān', definition: 'time' },

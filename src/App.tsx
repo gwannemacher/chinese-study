@@ -13,28 +13,54 @@ const getRandom = (listLength: number): number =>
 
 const App = () => {
   const lessons = Lessons;
-  const lesson = lessons[0];
-  const [randomIndex, setRandomIndex] = useState(
-    getRandom(lesson.characters.length)
-  );
   const [toggleState, setToggleState] = useState(ToggleState.FRONT);
+  const [lesson, setLesson] = useState(lessons[0]);
+  const [randomIndex, setRandomIndex] = useState(0);
 
   return (
-    <div style={{ display: "flex", gap: ".5em" }}>
-      <Card
-        chapter={lesson.chapter}
-        character={lesson.characters[randomIndex]}
-        toggleState={toggleState}
-        setToggleState={setToggleState}
-      />
-      <button
-        onClick={() => {
-          setToggleState(ToggleState.FRONT);
-          setRandomIndex(getRandom(lesson.characters.length));
-        }}
-      >
-        next
-      </button>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        rowGap: ".5em",
+        alignItems: "start",
+      }}
+    >
+      <div style={{ display: "flex", columnGap: ".5em" }}>
+        {lessons.map((l) => (
+          <button
+            style={{
+              border:
+                lesson.chapter === l.chapter
+                  ? "2px solid pink"
+                  : "2px solid transparent",
+            }}
+            onClick={() => {
+              setRandomIndex(getRandom(l.characters.length));
+              setLesson(l);
+            }}
+          >
+            {l.chapter}
+          </button>
+        ))}
+      </div>
+      <div style={{ display: "flex", gap: ".5em" }}>
+        <Card
+          chapter={lesson.chapter}
+          character={lesson.characters[randomIndex]}
+          toggleState={toggleState}
+          setToggleState={setToggleState}
+        />
+        <button
+          style={{ border: "2px solid pink" }}
+          onClick={() => {
+            setToggleState(ToggleState.FRONT);
+            setRandomIndex(getRandom(lesson.characters.length));
+          }}
+        >
+          next
+        </button>
+      </div>
     </div>
   );
 };
