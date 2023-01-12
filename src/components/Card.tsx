@@ -1,16 +1,14 @@
-import { useState } from "react";
 import { ToggleState } from "../App";
 import { Character } from "../types/character";
 
 type CardProps = {
-  chapter: number;
   character: Character;
   toggleState: ToggleState;
-  setToggleState: (toggleState: ToggleState) => void;
+  setToggleState: (value: React.SetStateAction<ToggleState>) => void;
 };
 
 export const Card = (props: CardProps) => {
-  const { chapter, character, toggleState, setToggleState } = props;
+  const { character, toggleState, setToggleState } = props;
 
   return (
     <button
@@ -26,10 +24,8 @@ export const Card = (props: CardProps) => {
         fontSize: "1.5em",
       }}
       onClick={() =>
-        setToggleState(
-          toggleState === ToggleState.BACK
-            ? ToggleState.FRONT
-            : ToggleState.BACK
+        setToggleState((previous) =>
+          previous === ToggleState.BACK ? ToggleState.FRONT : ToggleState.BACK
         )
       }
     >
