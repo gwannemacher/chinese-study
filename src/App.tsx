@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Card from "./components/Card";
 import { Lessons } from "./data/lessons";
@@ -16,6 +16,24 @@ const App = () => {
   const [toggleState, setToggleState] = useState(ToggleState.FRONT);
   const [lesson, setLesson] = useState(lessons[0]);
   const [randomIndex, setRandomIndex] = useState(0);
+
+  useEffect(() => {
+    const keydownEventListener = (e: KeyboardEvent) => {
+      if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+        setRandomIndex(getRandom(lesson.characters.length));
+      } else if (e.key === "Enter") {
+        setToggleState((previous) =>
+          previous === ToggleState.BACK ? ToggleState.FRONT : ToggleState.BACK
+        );
+      }
+    };
+
+    document.addEventListener("keydown", keydownEventListener);
+
+    return () => {
+      document.removeEventListener("keydown", keydownEventListener);
+    };
+  }, [lesson]);
 
   return (
     <div
@@ -46,7 +64,6 @@ const App = () => {
       </div>
       <div style={{ display: "flex", gap: ".5em" }}>
         <Card
-          chapter={lesson.chapter}
           character={lesson.characters[randomIndex]}
           toggleState={toggleState}
           setToggleState={setToggleState}
