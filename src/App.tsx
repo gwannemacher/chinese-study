@@ -21,7 +21,7 @@ const App = () => {
     const keydownEventListener = (e: KeyboardEvent) => {
       if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
         setRandomIndex(getRandom(lesson.characters.length));
-      } else if (e.key === "Enter") {
+      } else if (e.key === "ArrowUp" || e.key === "ArrowDown") {
         setToggleState((previous) =>
           previous === ToggleState.BACK ? ToggleState.FRONT : ToggleState.BACK
         );
@@ -47,6 +47,7 @@ const App = () => {
       <div style={{ display: "flex", columnGap: ".5em" }}>
         {lessons.map((l) => (
           <button
+            key={l.chapter}
             style={{
               border:
                 lesson.chapter === l.chapter
