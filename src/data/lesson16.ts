@@ -36,6 +36,6 @@ export const Lesson16: Lesson = {
         { hanzi: '歌', pinyin: 'gē', definition: 'song'},
         { hanzi: '信', pinyin: 'xìn', definition: 'letter'},
         { hanzi: '邮票', pinyin: 'yóupiào', definition: 'stamp'},
-        { hanzi: '寄', pinyin: 'jì', definition: 'ost'}
+        { hanzi: '寄', pinyin: 'jì', definition: 'post'}
     ]
 };

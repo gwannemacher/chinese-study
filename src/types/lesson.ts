@@ -1,6 +1,6 @@
 import { Character } from "./character";
 
 export type Lesson = {
-    chapter: number,
+    chapter: string | number,
     characters: Character[];
 };
