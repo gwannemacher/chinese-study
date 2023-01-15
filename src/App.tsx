@@ -21,6 +21,7 @@ const App = () => {
     const keydownEventListener = (e: KeyboardEvent) => {
       if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
         setRandomIndex(getRandom(lesson.characters.length));
+        setToggleState(ToggleState.FRONT);
       } else if (e.key === "ArrowUp" || e.key === "ArrowDown") {
         setToggleState((previous) =>
           previous === ToggleState.BACK ? ToggleState.FRONT : ToggleState.BACK
