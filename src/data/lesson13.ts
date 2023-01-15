@@ -1,0 +1,40 @@
+import { Lesson } from "../types/lesson";
+
+export const Lesson13: Lesson = {
+    chapter: 13, 
+    characters: [
+        { hanzi: '想', pinyin: 'xiǎng', definition: 'would like' },
+        { hanzi: '随身听', pinyin: 'suíshēntīng', definition: 'walkman' },
+        { hanzi: '给', pinyin: 'gěi', definition: 'for; to; by' },
+        { hanzi: '左右', pinyin: 'zuǒyòu', definition: 'or so; about' },
+        { hanzi: '牌子', pinyin: 'páizi', definition: 'brand' },
+        { hanzi: '质量', pinyin: 'zhìliàng', definition: 'quality' },
+        { hanzi: '又•••又•••', pinyin: 'yòu•••yòu•••', definition: 'both...and' },
+        { hanzi: '价钱', pinyin: 'jiàqian', definition: 'price' },
+        { hanzi: '便宜', pinyin: 'piányi', definition: 'cheap' },
+        { hanzi: '样子', pinyin: 'yàngzi', definition: 'appearance; shape' },
+        { hanzi: '好看', pinyin: 'hǎokàn', definition: 'nice; beautiful' },
+        { hanzi: '双', pinyin: 'shuāng', definition: 'pair' },
+        { hanzi: '号', pinyin: 'hào', definition: 'size' },
+        { hanzi: '可以', pinyin: 'kěyǐ', definition: 'can' },
+        { hanzi: '试', pinyin: 'shì', definition: 'to try' },
+        { hanzi: '有点', pinyin: 'yǒudiǎn', definition: 'a bit' },
+        { hanzi: '一点', pinyin: 'yìdiǎn', definition: 'a little' },
+        { hanzi: '合适', pinyin: 'héshì', definition: 'suitable' },
+        { hanzi: '件', pinyin: 'jiàn', definition: 'a measure word for clothing, matters, etc.)' },
+        { hanzi: '白', pinyin: 'bái', definition: 'white' },
+        { hanzi: '真丝', pinyin: 'zhēnsī', definition: 'real silk' },
+        { hanzi: '衬衣', pinyin: 'chènyī', definition: 'shirt' },
+        { hanzi: '颜色', pinyin: 'yánsè', definition: 'color' },
+        { hanzi: '只', pinyin: 'zhǐ', definition: 'only' },
+        { hanzi: '种', pinyin: 'zhǒng', definition: 'kind; type' },
+        { hanzi: '用', pinyin: 'yòng', definition: 'to use' },
+        { hanzi: '算', pinyin: 'suàn', definition: 'to calculate' },
+        { hanzi: '条', pinyin: 'tiáo', definition: 'a measure word for long or narrow or thin things)' },
+        { hanzi: '裤子', pinyin: 'kùzi', definition: 'trousers; pants' },
+        { hanzi: '乱', pinyin: 'luàn', definition: 'messy' },
+        { hanzi: '老', pinyin: 'lǎo', definition: 'old' },
+        { hanzi: '带', pinyin: 'dài', definition: 'to take' },
+        { hanzi: '雨伞', pinyin: 'yǔsǎn', definition: 'umbrella' }
+    ]
+};

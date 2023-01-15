@@ -1,0 +1,41 @@
+import { Lesson } from "../types/lesson";
+
+export const Lesson15: Lesson = {
+    chapter: 15, 
+    characters: [
+        { hanzi: '走', pinyin: 'zǒu', definition: 'to go; to walk' },
+        { hanzi: '一直', pinyin: 'yīzhí', definition: 'straight' },
+        { hanzi: '往', pinyin: 'wǎng', definition: 'toward' },
+        { hanzi: '到', pinyin: 'dào', definition: 'to arrive; to reach' },
+        { hanzi: '子', pinyin: 'zì', definition: 'character' },
+        { hanzi: '路口', pinyin: 'lùkǒu', definition: 'crossing; intersection' },
+        { hanzi: '拐', pinyin: 'guǎi', definition: 'to turn' },
+        { hanzi: '米', pinyin: 'mǐ', definition: 'meter' },
+        { hanzi: '公里', pinyin: 'gōnglǐ', definition: 'kilometer' },
+        { hanzi: '车', pinyin: 'chē', definition: 'vehicle' },
+        { hanzi: '过', pinyin: 'guò', definition: 'to cross' },
+        { hanzi: '马路', pinyin: 'mǎlù', definition: 'avenue; street' },
+        { hanzi: '先', pinyin: 'xiān', definition: 'first' },
+        { hanzi: '路', pinyin: 'lù', definition: 'route; No. (for bus); road' },
+        { hanzi: '公共汽车', pinyin: 'gōnggòng qìchē', definition: 'bus' },
+        { hanzi: '然后', pinyin: 'ránhòu', definition: 'then' },
+        { hanzi: '地铁', pinyin: 'dìtiě', definition: 'subway; underground' },
+        { hanzi: '应该', pinyin: 'yīnggāi', definition: 'should' },
+        { hanzi: '或者', pinyin: 'huòzhě', definition: 'or' },
+        { hanzi: '骑', pinyin: 'qí', definition: 'to ride' },
+        { hanzi: '技术', pinyin: 'jìshù', definition: 'skill' },
+        { hanzi: '还是', pinyin: 'háishi', definition: '(expressing a preference for an alternative)' },
+        { hanzi: '周末', pinyin: 'zhōumò', definition: 'weekend' },
+        { hanzi: '火车', pinyin: 'huǒchē', definition: 'train' },
+        { hanzi: '飞机', pinyin: 'fēijī', definition: 'plane' },
+        { hanzi: '快', pinyin: 'kuài', definition: 'fast' },
+        { hanzi: '舒服', pinyin: 'shūfu', definition: 'comfortable' },
+        { hanzi: '可是', pinyin: 'kěshì', definition: 'but' },
+        { hanzi: '宽', pinyin: 'kuān', definition: 'wide' },
+        { hanzi: '重', pinyin: 'zhòng', definition: 'heavy' },
+        { hanzi: '出租汽车', pinyin: 'chūzū qìchē', definition: 'taxi' },
+        { hanzi: '送', pinyin: 'sòng', definition: 'to send' },
+        { hanzi: '礼物', pinyin: 'lǐwù', definition: 'gift' },
+        { hanzi: '花', pinyin: 'huā', definition: 'flower' }
+    ]
+};
