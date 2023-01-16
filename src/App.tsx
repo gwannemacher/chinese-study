@@ -9,7 +9,7 @@ export enum ToggleState {
 }
 
 const getRandom = (listLength: number): number =>
-  Math.floor(Math.random() * (listLength - 1));
+  Math.floor(Math.random() * listLength);
 
 const App = () => {
   const lessons = Lessons;
@@ -45,15 +45,21 @@ const App = () => {
         alignItems: "start",
       }}
     >
-      <div style={{ display: "flex", columnGap: ".5em" }}>
+      <div
+        style={{
+          display: "flex",
+          rowGap: ".5em",
+          columnGap: ".5em",
+          flexWrap: "wrap",
+        }}
+      >
         {lessons.map((l) => (
           <button
             key={l.chapter}
             style={{
-              border:
-                lesson.chapter === l.chapter
-                  ? "2px solid pink"
-                  : "2px solid transparent",
+              border: "2px solid pink",
+              backgroundColor:
+                lesson.chapter === l.chapter ? "pink" : "inherit",
             }}
             onClick={() => {
               setRandomIndex(getRandom(l.characters.length));
@@ -64,7 +70,7 @@ const App = () => {
           </button>
         ))}
       </div>
-      <div style={{ display: "flex", gap: ".5em" }}>
+      <div style={{ display: "flex", gap: ".5em", width: "100%" }}>
         <Card
           character={lesson.characters[randomIndex]}
           toggleState={toggleState}
