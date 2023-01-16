@@ -13,7 +13,6 @@ export const Card = (props: CardProps) => {
   return (
     <button
       style={{
-        width: "15em",
         height: "10em",
         border: "2px solid pink",
         borderRadius: ".6em",
@@ -22,6 +21,7 @@ export const Card = (props: CardProps) => {
         justifyContent: "center",
         alignItems: "center",
         fontSize: "1.5em",
+        flexGrow: "1",
       }}
       onClick={() =>
         setToggleState((previous) =>

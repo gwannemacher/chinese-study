@@ -25,6 +25,6 @@ export const Lesson17: Lesson = {
         { hanzi: '衣服', pinyin: 'yīfú', definition: 'clothes' },
         { hanzi: '枝', pinyin: 'zhī', definition: '(a measure word for flowers with stems intact)' },
         { hanzi: '洗澡', pinyin: 'xǐzǎo', definition: 'to take a shower' },
-        { hanzi: '玩儿', pinyin: 'wán er', definition: 'to play' }
+        { hanzi: '玩', pinyin: 'wán', definition: 'to play' }
     ]
 };
