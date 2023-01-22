@@ -1,4 +1,6 @@
 import { Lesson } from "../types/lesson";
+import { Lesson10 } from "./lesson10";
+import { Lesson11 } from "./lesson11";
 import { Lesson12 } from "./lesson12";
 import { Lesson13 } from "./lesson13";
 import { Lesson14 } from "./lesson14";
@@ -8,7 +10,16 @@ import { Lesson17 } from "./lesson17";
 
 const AllLessons: Lesson = {
     chapter: 'all',
-    characters: [...Lesson12.characters, ...Lesson13.characters, ...Lesson14.characters, ...Lesson15.characters, ...Lesson16.characters, ...Lesson17.characters]
+    characters: [
+        ...Lesson10.characters, 
+        ...Lesson11.characters, 
+        ...Lesson12.characters, 
+        ...Lesson13.characters, 
+        ...Lesson14.characters, 
+        ...Lesson15.characters, 
+        ...Lesson16.characters, 
+        ...Lesson17.characters
+    ]
 };
 
-export const Lessons: Lesson[] = [Lesson12, Lesson13, Lesson14, Lesson15, Lesson16, Lesson17, AllLessons];
+export const Lessons: Lesson[] = [Lesson10, Lesson11, Lesson12, Lesson13, Lesson14, Lesson15, Lesson16, Lesson17, AllLessons];
