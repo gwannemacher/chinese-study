@@ -1,0 +1,43 @@
+import { Lesson } from "../types/lesson";
+
+export const Lesson11: Lesson = {
+    chapter: 11, 
+    characters: [
+        { hanzi: '里边', pinyin: 'lǐbian', definition: 'in' },
+        { hanzi: '教学楼', pinyin: 'jiàoxuélóu', definition: 'teaching building' },
+        { hanzi: '办公楼', pinyin: 'bàngōnglóu', definition: 'administrative building' },
+        { hanzi: '北边', pinyin: 'běibian', definition: 'north' },
+        { hanzi: '西边', pinyin: 'xībian', definition: 'west' },
+        { hanzi: '南边', pinyin: 'nánbian', definition: 'south' },
+        { hanzi: '附近', pinyin: 'fùjìn', definition: 'nearby; close to' },
+        { hanzi: '饭馆', pinyin: 'fàngguǎn', definition: 'restaurant' },
+        { hanzi: '东边', pinyin: 'dōngbian', definition: 'east' },
+        { hanzi: '还', pinyin: 'hái', definition: 'still; also' },
+        { hanzi: '电影', pinyin: 'diànyǐng', definition: 'movie' },
+        { hanzi: '电影院', pinyin: 'diànyǐngyuàn', definition: 'cinema' },
+        { hanzi: '对面', pinyin: 'duìmiàn', definition: 'opposite side' },
+        { hanzi: '药', pinyin: 'yào', definition: 'medicine' },
+        { hanzi: '旁边', pinyin: 'pángbiān', definition: 'beside' },
+        { hanzi: '茶叶', pinyin: 'cháyè', definition: 'opposite side' },
+        { hanzi: '们', pinyin: 'men', definition: '(a suffix denoting a plural form)' },
+        { hanzi: '照片', pinyin: 'zhàopiàn', definition: 'photo' },
+        { hanzi: '左边', pinyin: 'zuǒbian', definition: 'on the left' },
+        { hanzi: '右边', pinyin: 'yòubian', definition: 'on the right' },
+        { hanzi: '中间', pinyin: 'zhōngjiān', definition: 'in the middle' },
+        { hanzi: '后边', pinyin: 'hòubian', definition: 'behind' },
+        { hanzi: '桌子', pinyin: 'zhuōzi', definition: 'desk; table' },
+        { hanzi: '上边', pinyin: 'shàngbian', definition: 'on' },
+        { hanzi: '台灯', pinyin: 'táidēng', definition: 'desk lamp' },
+        { hanzi: '张', pinyin: 'zhāng', definition: '(a measure word for desks, tables, paper, etc)' },
+        { hanzi: '男', pinyin: 'nán', definition: 'male' },
+        { hanzi: '男朋友', pinyin: 'nán péngyou', definition: 'boyfriend' },
+        { hanzi: '下边', pinyin: 'xiàbian', definition: 'under' },
+        { hanzi: '抽屉', pinyin: 'chōuti', definition: 'drawer' },
+        { hanzi: '块', pinyin: 'kuài', definition: '(a measure word) piece; lump' },
+        { hanzi: '巧克力', pinyin: 'qiǎokèlì', definition: 'chocolate' },
+        { hanzi: '前边', pinyin: 'qiánbian', definition: 'in the front of' },
+        { hanzi: '鞋', pinyin: 'xié', definition: 'shoe' },
+        { hanzi: '眼镜', pinyin: 'yǎnjìng', definition: 'glasses' },
+        { hanzi: '闹钟', pinyin: 'nàozhōng', definition: 'alarm clock' }
+    ]
+};

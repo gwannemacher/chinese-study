@@ -34,7 +34,7 @@ export const Lesson14: Lesson = {
         { hanzi: '请客', pinyin: 'qǐng kè', definition: 'to treat' },
         { hanzi: '以后', pinyin: 'yǐhòu', definition: 'later' },
         { hanzi: '唱', pinyin: 'chàng', definition: 'to sing' },
-        { hanzi: '卡拉欧剋', pinyin: 'kǎlā’ōukèi', definition: 'karaoke' },
+        { hanzi: '卡拉OK', pinyin: 'kǎlā’ōukèi', definition: 'karaoke' },
         { hanzi: '有意思', pinyin: 'yǒuyìsi', definition: 'interesting' },
         { hanzi: '汉子', pinyin: 'Hànzì', definition: 'Chinese character' },
         { hanzi: '告诉', pinyin: 'gàosu', definition: 'to tell' },
