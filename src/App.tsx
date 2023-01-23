@@ -41,15 +41,16 @@ const App = () => {
       style={{
         display: "flex",
         flexDirection: "column",
-        rowGap: ".5em",
+        rowGap: ".61em",
         alignItems: "start",
+        width: "30em",
       }}
     >
       <div
         style={{
           display: "flex",
           rowGap: ".5em",
-          columnGap: ".5em",
+          columnGap: ".61em",
           flexWrap: "wrap",
         }}
       >

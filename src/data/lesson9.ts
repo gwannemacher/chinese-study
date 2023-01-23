@@ -1,0 +1,36 @@
+import { Lesson } from "../types/lesson";
+
+export const Lesson9: Lesson = {
+    chapter: 9, 
+    characters: [
+        { hanzi: '想', pinyin: 'xiǎng', definition: 'to miss; to think' },
+        { hanzi: '当然', pinyin: 'dāngrán', definition: 'of course' },
+        { hanzi: '家', pinyin: 'jiā', definition: 'home; family' },
+        { hanzi: '口', pinyin: 'kǒu', definition: '(a measure word for people); mouth' },
+        { hanzi: '兄弟', pinyin: 'xiōngdì', definition: 'brother' },
+        { hanzi: '姐妹', pinyin: 'jiěmèi', definition: 'sister' },
+        { hanzi: '独生女', pinyin: 'dúshēngnǚ', definition: 'only daughter' },
+        { hanzi: '工作', pinyin: 'gōngzuò', definition: 'to work; work; job' },
+        { hanzi: '父亲', pinyin: 'fùqin', definition: 'father' },
+        { hanzi: '母亲', pinyin: 'mǔqin', definition: 'mother' },
+        { hanzi: '医生', pinyin: 'yīshēng', definition: 'doctor' },
+        { hanzi: '公司', pinyin: 'gōngsī', definition: 'company' },
+        { hanzi: '职员', pinyin: 'zhíyuán', definition: 'staff member' },
+        { hanzi: '记者', pinyin: 'jìzhě', definition: 'journalist' },
+        { hanzi: '名片', pinyin: 'míngpiàn', definition: 'name card' },
+        { hanzi: '父母', pinyin: 'fùmǔ', definition: 'parents' },
+        { hanzi: '今年', pinyin: 'jīnnián', definition: 'this year' },
+        { hanzi: '多', pinyin: 'duō', definition: 'over' },
+        { hanzi: '年纪', pinyin: 'niánjì', definition: 'age' },
+        { hanzi: '岁', pinyin: 'suì', definition: 'year (of age)' },
+        { hanzi: '秘密', pinyin: 'mìmì', definition: 'secret' },
+        { hanzi: '孩子', pinyin: 'háizi', definition: 'child; children' },
+        { hanzi: '儿子', pinyin: 'eŕzi', definition: 'son' },
+        { hanzi: '真', pinyin: 'zhēn', definition: 'very' },
+        { hanzi: '售货员', pinyin: 'shòuhuòyuán', definition: 'shop assistant' },
+        { hanzi: '经理', pinyin: 'jīnglǐ', definition: 'manager' },
+        { hanzi: '司机', pinyin: 'sījī', definition: 'driver' },
+        { hanzi: '爷爷', pinyin: 'yéye', definition: 'grandfather' },
+        { hanzi: '奶奶', pinyin: 'nǎinai', definition: 'grandmother' },
+    ]
+};
