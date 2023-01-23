@@ -39,7 +39,7 @@ export const Lesson10: Lesson = {
         { hanzi: '昨天', pinyin: 'zuótiān', definition: 'yesterday' },
         { hanzi: '明天', pinyin: 'míngtiān', definition: 'tomorrow' },
         { hanzi: '后天', pinyin: 'hòutiān', definition: 'the day after tomorrow' },
-        { hanzi: '大后天', pinyin: 'dàhòutiān', definition: 'three days fromnow' },
+        { hanzi: '大后天', pinyin: 'dàhòutiān', definition: 'three days from now' },
         { hanzi: '生日', pinyin: 'shēngri', definition: 'birthday' },
     ]
 };
