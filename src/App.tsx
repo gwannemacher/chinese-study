@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Card from "./components/Card";
 import { Lessons } from "./data/lessons";
+import { FlashcardStyles } from "./thingy/styleConstants";
 
 export enum ToggleState {
   FRONT,
@@ -61,10 +62,10 @@ const App = () => {
           <button
             key={l.chapter}
             style={{
-              border: "2px solid pink",
+              border: FlashcardStyles.border,
               width: "4.48em",
               backgroundColor:
-                lesson.chapter === l.chapter ? "pink" : "inherit",
+                lesson.chapter === l.chapter ? FlashcardStyles.accentColor : "",
             }}
             onClick={() => {
               setRandomIndex(getRandom(l.characters.length));
@@ -82,7 +83,7 @@ const App = () => {
           setToggleState={setToggleState}
         />
         <button
-          style={{ border: "2px solid pink" }}
+          style={{ border: FlashcardStyles.border }}
           onClick={() => {
             setToggleState(ToggleState.FRONT);
             setRandomIndex(getRandom(lesson.characters.length));
