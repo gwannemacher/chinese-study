@@ -17,12 +17,15 @@ const App = () => {
   const [lesson, setLesson] = useState(lessons[0]);
   const [randomIndex, setRandomIndex] = useState(0);
 
+  const toggleKeys = ["ArrowRight", "ArrowLeft", "k"];
+  const nextKeys = ["ArrowUp", "ArrowDown", "j"];
+
   useEffect(() => {
     const keydownEventListener = (e: KeyboardEvent) => {
-      if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+      if (toggleKeys.find((x) => x === e.key)) {
         setRandomIndex(getRandom(lesson.characters.length));
         setToggleState(ToggleState.FRONT);
-      } else if (e.key === "ArrowUp" || e.key === "ArrowDown") {
+      } else if (nextKeys.find((x) => x === e.key)) {
         setToggleState((previous) =>
           previous === ToggleState.BACK ? ToggleState.FRONT : ToggleState.BACK
         );
@@ -59,6 +62,7 @@ const App = () => {
             key={l.chapter}
             style={{
               border: "2px solid pink",
+              width: "4.48em",
               backgroundColor:
                 lesson.chapter === l.chapter ? "pink" : "inherit",
             }}
