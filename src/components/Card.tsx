@@ -1,4 +1,5 @@
 import { ToggleState } from "../App";
+import { FlashcardStyles } from "../thingy/styleConstants";
 import { Character } from "../types/character";
 
 type CardProps = {
@@ -14,7 +15,7 @@ export const Card = (props: CardProps) => {
     <button
       style={{
         height: "10em",
-        border: "2px solid pink",
+        border: FlashcardStyles.border,
         borderRadius: ".6em",
         display: "flex",
         flexDirection: "column",
