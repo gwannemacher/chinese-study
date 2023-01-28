@@ -1,0 +1,37 @@
+import { Lesson } from "../types/lesson";
+
+export const Lesson6: Lesson = {
+    chapter: 6, 
+    characters: [
+        { hanzi: '认识', pinyin: 'rènshi', definition: 'to meet; to know' },
+        { hanzi: '高兴', pinyin: 'gāoxìng', definition: 'happy' },
+        { hanzi: '来', pinyin: 'lái', definition: '(used before a verb, indicating an intended action)' },
+        { hanzi: '介绍', pinyin: 'jièshào', definition: 'to introduce' },
+        { hanzi: '一下', pinyin: 'yí xià', definition: '(indicates that an action is brief, slight)' },
+        { hanzi: '是', pinyin: 'shì', definition: 'to be' },
+        { hanzi: '学习', pinyin: 'xuéxí', definition: 'to learn; learning' },
+        { hanzi: '汉语', pinyin: 'Hànyǔ', definition: 'Chinese language' },
+        { hanzi: '班', pinyin: 'bān', definition: 'class' },
+        { hanzi: '的', pinyin: 'de', definition: 'of' },
+        { hanzi: '学生', pinyin: 'xuésheng', definition: 'student' },
+        { hanzi: '这', pinyin: 'zhè', definition: 'this' },
+        { hanzi: '我们', pinyin: 'wǒmen', definition: 'we; us' },
+        { hanzi: '那', pinyin: 'nà', definition: 'that' },
+        { hanzi: '朋友', pinyin: 'péngyou', definition: 'friend' },
+        { hanzi: '和', pinyin: 'hé', definition: 'and' },
+        { hanzi: '人', pinyin: 'rén', definition: 'people' },
+        { hanzi: '教室', pinyin: 'jiàoshì', definition: 'classroom' },
+        { hanzi: '大', pinyin: 'dà', definition: 'big' },
+        { hanzi: '新', pinyin: 'xīn', definition: 'new' },
+        { hanzi: '同学', pinyin: 'tóngxué', definition: 'classmate' },
+        { hanzi: '厚', pinyin: 'hòu', definition: 'thick' },
+        { hanzi: '漂亮', pinyin: 'piàoliang', definition: 'pretty; beautiful' },
+        { hanzi: '极了', pinyin: 'jí le', definition: 'extremely' },
+        { hanzi: '女儿', pinyin: `nǚ'ér`, definition: 'daughter' },
+        { hanzi: '聪明', pinyin: 'cōngming', definition: 'clever' },
+        { hanzi: '可爱', pinyin: `kě'ài`, definition: 'lovely' },
+        { hanzi: '看', pinyin: 'kàn', definition: 'to look' },
+        { hanzi: '帅', pinyin: 'shuài', definition: 'handsome' },
+        { hanzi: '小', pinyin: 'xiǎo', definition: 'small; little; (a prefix showing endearment for young people)' },
+    ]
+};
