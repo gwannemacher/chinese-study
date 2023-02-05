@@ -1,4 +1,5 @@
 import { Lesson } from "../types/lesson";
+import { Lesson1 } from "./lesson1";
 import { Lesson10 } from "./lesson10";
 import { Lesson11 } from "./lesson11";
 import { Lesson12 } from "./lesson12";
@@ -19,6 +20,7 @@ import { Lesson9 } from "./lesson9";
 const AllLessons: Lesson = {
     chapter: 'all',
     characters: [
+        ...Lesson1.characters, 
         ...Lesson2.characters, 
         ...Lesson3.characters, 
         ...Lesson4.characters, 
@@ -39,6 +41,7 @@ const AllLessons: Lesson = {
 };
 
 export const Lessons: Lesson[] = [
+    Lesson1,
     Lesson2,
     Lesson3,
     Lesson4,
