@@ -3,13 +3,13 @@ import { Lesson } from "../types/lesson";
 export const Lesson1: Lesson = {
     chapter: 1, 
     characters: [
-        { hanzi: '你', pinyin: 'nǐ', definition: 'you' },
+        { hanzi: '你', pinyin: 'nǐ', definition: 'you', hidden: true },
         { hanzi: '好', pinyin: 'hǎo', definition: 'well; good' },
-        { hanzi: '您', pinyin: 'nín', definition: 'you (polite)' },
-        { hanzi: '你们', pinyin: 'nǐmen', definition: 'you (plural)' },
+        { hanzi: '您', pinyin: 'nín', definition: 'you (polite)', hidden: true },
+        { hanzi: '你们', pinyin: 'nǐmen', definition: 'you (plural)', hidden: true },
         { hanzi: '老师', pinyin: 'láoshī', definition: 'teacher' },
         { hanzi: '谢谢', pinyin: 'xièxie', definition: 'to thank' },
-        { hanzi: '不', pinyin: 'bù', definition: 'not' },
+        { hanzi: '不', pinyin: 'bù', definition: 'not', hidden: true },
         { hanzi: '客气', pinyin: 'kèqi', definition: 'polite; courteous' },
         { hanzi: '不客气', pinyin: 'bú kèqi', definition: `Don't mention it; You're welcome` },
         { hanzi: '对不起', pinyin: 'duìbuqǐ', definition: 'I am sorry.' },

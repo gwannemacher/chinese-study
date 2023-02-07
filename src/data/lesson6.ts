@@ -19,9 +19,9 @@ export const Lesson6: Lesson = {
         { hanzi: '那', pinyin: 'nà', definition: 'that' },
         { hanzi: '朋友', pinyin: 'péngyou', definition: 'friend' },
         { hanzi: '和', pinyin: 'hé', definition: 'and' },
-        { hanzi: '人', pinyin: 'rén', definition: 'people' },
+        { hanzi: '人', pinyin: 'rén', definition: 'people', hidden: true },
         { hanzi: '教室', pinyin: 'jiàoshì', definition: 'classroom' },
-        { hanzi: '大', pinyin: 'dà', definition: 'big' },
+        { hanzi: '大', pinyin: 'dà', definition: 'big', hidden: true },
         { hanzi: '新', pinyin: 'xīn', definition: 'new' },
         { hanzi: '同学', pinyin: 'tóngxué', definition: 'classmate' },
         { hanzi: '厚', pinyin: 'hòu', definition: 'thick' },
@@ -32,6 +32,6 @@ export const Lesson6: Lesson = {
         { hanzi: '可爱', pinyin: `kě'ài`, definition: 'lovely' },
         { hanzi: '看', pinyin: 'kàn', definition: 'to look' },
         { hanzi: '帅', pinyin: 'shuài', definition: 'handsome' },
-        { hanzi: '小', pinyin: 'xiǎo', definition: 'small; little; (a prefix showing endearment for young people)' },
+        { hanzi: '小', pinyin: 'xiǎo', definition: 'small; little; (a prefix showing endearment for young people)', hidden: true },
     ]
 };

@@ -4,7 +4,7 @@ export const Lesson2: Lesson = {
     chapter: 2, 
     characters: [
         { hanzi: '吗', pinyin: 'ma', definition: '(a particle used at the end of a question)'},
-        { hanzi: '我', pinyin: 'wǒ', definition: 'I'},
+        { hanzi: '我', pinyin: 'wǒ', definition: 'I', hidden: true},
         { hanzi: '很', pinyin: 'hěn', definition: 'very'},
         { hanzi: '呢', pinyin: 'ne', definition: '(a particle used at the end of special, alternative, or rhetorical question)'},
         { hanzi: '也', pinyin: 'yě', definition: 'too, also'},
