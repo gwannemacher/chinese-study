@@ -8,6 +8,7 @@ import { Lesson14 } from "./lesson14";
 import { Lesson15 } from "./lesson15";
 import { Lesson16 } from "./lesson16";
 import { Lesson17 } from "./lesson17";
+import { Lesson18 } from "./lesson18";
 import { Lesson2 } from "./lesson2";
 import { Lesson3 } from "./lesson3";
 import { Lesson4 } from "./lesson4";
@@ -36,7 +37,8 @@ const AllLessons: Lesson = {
         ...Lesson14.characters, 
         ...Lesson15.characters, 
         ...Lesson16.characters, 
-        ...Lesson17.characters
+        ...Lesson17.characters,
+        ...Lesson18.characters
     ]
 };
 
@@ -58,5 +60,6 @@ export const Lessons: Lesson[] = [
     Lesson15, 
     Lesson16, 
     Lesson17, 
+    Lesson18,
     AllLessons
 ];
