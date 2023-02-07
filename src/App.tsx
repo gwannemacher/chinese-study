@@ -3,20 +3,34 @@ import "./App.css";
 import Card from "./components/Card";
 import { Lessons } from "./data/lessons";
 import { FlashcardStyles } from "./thingy/styleConstants";
+import { Lesson } from "./types/lesson";
 
 export enum ToggleState {
   FRONT,
   BACK,
 }
 
-const getRandom = (listLength: number): number =>
-  Math.floor(Math.random() * listLength);
+const getRandomIndex = (lesson: Lesson): number => {
+  let randomIndex = Math.floor(Math.random() * lesson.characters.length);
+  while (lesson.characters[randomIndex].hidden) {
+    randomIndex = Math.floor(Math.random() * lesson.characters.length);
+  }
+
+  return randomIndex;
+};
 
 const App = () => {
   const lessons = Lessons;
   const [toggleState, setToggleState] = useState(ToggleState.FRONT);
   const [lesson, setLesson] = useState(lessons[0]);
-  const [randomIndex, setRandomIndex] = useState(0);
+  const [randomIndex, setRandomIndex] = useState(() =>
+    getRandomIndex(lessons[0])
+  );
+
+  const setRandomCharacter = (lesson: Lesson) => {
+    const randomIndex = getRandomIndex(lesson);
+    setRandomIndex(randomIndex);
+  };
 
   const toggleKeys = ["ArrowRight", "ArrowLeft", "k"];
   const nextKeys = ["ArrowUp", "ArrowDown", "j"];
@@ -24,7 +38,7 @@ const App = () => {
   useEffect(() => {
     const keydownEventListener = (e: KeyboardEvent) => {
       if (toggleKeys.find((x) => x === e.key)) {
-        setRandomIndex(getRandom(lesson.characters.length));
+        setRandomCharacter(lesson);
         setToggleState(ToggleState.FRONT);
       } else if (nextKeys.find((x) => x === e.key)) {
         setToggleState((previous) =>
@@ -68,7 +82,7 @@ const App = () => {
                 lesson.chapter === l.chapter ? FlashcardStyles.accentColor : "",
             }}
             onClick={() => {
-              setRandomIndex(getRandom(l.characters.length));
+              setRandomCharacter(l);
               setLesson(l);
             }}
           >
@@ -86,7 +100,7 @@ const App = () => {
           style={{ border: FlashcardStyles.border }}
           onClick={() => {
             setToggleState(ToggleState.FRONT);
-            setRandomIndex(getRandom(lesson.characters.length));
+            setRandomCharacter(lesson);
           }}
         >
           next
